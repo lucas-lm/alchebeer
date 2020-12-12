@@ -1,0 +1,20 @@
+.root {
+  background: linear-gradient(to right, #ba0c2f 0%, #451311 100%);
+  color: #ffffff;
+  font-family: 'Poppins', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu>* {
+  margin: 0 16px
+}
