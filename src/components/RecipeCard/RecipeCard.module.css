@@ -1,0 +1,16 @@
+.root {
+  width: 300px;
+  border-radius: 8px;
+  background-color: palegoldenrod;
+  color: #212529;
+}
+
+.picture {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 8px 8px 0 0;
+}
+
+.info-box {
+  padding: 4px 8px;
+}
