@@ -1,0 +1,11 @@
+.root {
+  color: black;
+}
+
+.recipes {
+  display: flex;
+}
+
+.recipes>* {
+  margin: 8px;
+}
