@@ -9,7 +9,6 @@ const DrinkSchema = Schema({
   },
   description: {
     type: String,
-    required: true,
     trim: true
   },
   ingredients: {
