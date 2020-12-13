@@ -1,0 +1,12 @@
+.root {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.recipes {
+  display: flex;
+}
+
+.recipes>* {
+  margin: 8px;
+}
