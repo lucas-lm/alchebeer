@@ -1,16 +1,31 @@
 .root {
   width: 300px;
   border-radius: 8px;
-  background-color: palegoldenrod;
   color: #212529;
 }
 
 .picture {
-  width: 100%;
-  object-fit: contain;
-  border-radius: 8px 8px 0 0;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
 }
 
 .info-box {
-  padding: 4px 8px;
+  padding: 0;
+}
+
+.title {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.creator {
+  font-size: 0.9em;
+}
+
+.description {
+  font-size: 1em;
+  color: #383d42;
 }
