@@ -29,3 +29,12 @@
   font-size: 1em;
   color: #383d42;
 }
+
+.link {
+  color: #0074D9;
+  transition: 250ms ease;
+}
+
+.link:hover {
+  color: #052d55;
+}
