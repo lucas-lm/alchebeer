@@ -2,6 +2,8 @@ import { useState } from 'react'
 import Head from 'next/head'
 import styles from '../../styles/CreateRecipe.module.css'
 import Button from '../../components/Button'
+import Input from '../../components/Input'
+import Backdrop from '../../components/Backdrop'
 import IngrediendCard from '../../components/IngredientCard'
 import { api } from '../../utils'
 
@@ -18,6 +20,10 @@ export const getServerSideProps = async () => {
 const CreateRecipe = ({ data }) => {
   const { items, categories } = data
   const [ingredients, setIngredients] = useState([])
+  const [drinkName, setDrinkName] = useState('')
+  const [username, setUsername] = useState('')
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const modal = `${styles.modal} ${isModalOpen ? '' : styles.closed }`
 
   const handleSelection = id => {
     setIngredients([...ingredients, id])
@@ -27,8 +33,14 @@ const CreateRecipe = ({ data }) => {
     setIngredients(ingredients.filter(i => i !== id))
   }
 
-  const handleSubmit = () => {
-    console.log(ingredients)
+  const openModal = () => {
+   setIsModalOpen(true)
+  }
+
+  const handleSubmit = async event => {
+    event.preventDefault()
+    const { data } = await api.post('/drinks', {name: drinkName, creator: username, ingredients})
+    console.log(data)
   }
 
   return (
@@ -62,9 +74,21 @@ const CreateRecipe = ({ data }) => {
           )
         }
       })}
-      <Button variant='action' onClick={handleSubmit} disabled={ingredients.length === 0}>
+      <Button variant='action' onClick={openModal} disabled={ingredients.length === 0}>
         Criar
       </Button>
+      <div className={modal}>
+        <h2>Quase lá!</h2>
+        <p>Só precisamos de mais algumas informações antes de registrar sua receita</p>
+        <form onSubmit={handleSubmit} className={styles['drink-form']}>
+          <Input value={username} onChange={e => setUsername(e.target.value)} placeholder='Seu nome' required />
+          <Input value={drinkName} onChange={e => setDrinkName(e.target.value)} placeholder='Nome do drink' required />
+          <Button variant='action' type='submit'>
+            Enviar
+          </Button>
+        </form>
+      </div>
+      <Backdrop open={isModalOpen} onClose={() => setIsModalOpen(false)}/>
     </div>
   )
 }

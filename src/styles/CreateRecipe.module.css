@@ -11,3 +11,28 @@
 .ingredients>* {
   margin: 8px;
 }
+
+.modal {
+  z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  padding: 16px;
+}
+
+.closed {
+  display: none;
+}
+
+.drink-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.drink-form input {
+  margin: 8px 0;
+}
