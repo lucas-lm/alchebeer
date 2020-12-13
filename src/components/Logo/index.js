@@ -6,8 +6,8 @@ const Logo = () => {
     <Link href='/'>
       <a>
         <div className={styles.root}>
-          <span>ALCHE</span><br />
-          <span>BEER</span>
+          <span className={styles.first}>alche</span>
+          <span className={styles.second}>beer</span>
         </div>
       </a>
     </Link>

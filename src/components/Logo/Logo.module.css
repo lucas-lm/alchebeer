@@ -1,4 +1,16 @@
 .root {
+  font-family: 'Quicksand', Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+.first {
   color: #ffffff;
-  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.second {
+  color: #F0B030;
+  display: block;
+  margin-left: 35%;
+  margin-top: -20%;
 }
