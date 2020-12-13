@@ -14,3 +14,12 @@
 .root:hover {
   background-color: #212529;
 }
+
+.root:disabled {
+  cursor: not-allowed;
+  background-color:#ecca86;
+}
+
+.root:hover:disabled {
+  background-color: rgb(197, 119, 119);
+}
