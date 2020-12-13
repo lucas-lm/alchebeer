@@ -1,0 +1,13 @@
+.root {
+  z-index: 10;
+  background-color: #0f0f0fc0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.closed {
+  display: none;
+}
