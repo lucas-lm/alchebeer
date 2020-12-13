@@ -39,6 +39,7 @@ export default function OurRecipes({ data }) {
           description={recipe.description}
           image={getImage(recipe.ingredients)}
           creator={recipe.creator}
+          link={`/bebidas-da-galera/${recipe._id}`}
         />)}
       </div>
     </div>
