@@ -5,9 +5,7 @@ import { api } from '../../utils'
 
 export const getServerSideProps = async ({ params }) => {
   const { data } = await api.get(`/drinks/${params.id}`)
-  const { data: { items: ingredients } } = await api.get('/ingredients')
-  data.ingredients = ingredients.filter(item => data.ingredients.includes(item.id))
-
+  console.log(data)
   return {
     props: {
       data
@@ -20,10 +18,10 @@ export default function Recipe({ data }) {
   return (
     <div className={styles.root}>
       <Head>
-        <title>Alchebeer | Home</title>
+        <title>Alchebeer | {name} por {creator}</title>
         <meta 
           name="description" 
-          content="Crie, compartilhe e experimente novas bebidas"
+          content={`Veja a receita de ${creator}: ${name}`}
         />
       </Head>
       <Title variant='h2' style={{marginBottom: 0}}>{name}</Title>
