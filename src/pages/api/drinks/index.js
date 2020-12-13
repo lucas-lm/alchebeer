@@ -12,8 +12,8 @@ export default async (req, res) => {
     }
       
     case 'POST': {
-      const { body: { name, creator, ingredients } } = req
-      const drink = await Drink.create({name, creator, ingredients})
+      const { body: { name, creator, ingredients, instructions='' } } = req
+      const drink = await Drink.create({name, creator, ingredients, instructions})
       console.log(drink)
       return res.json(drink)
     }

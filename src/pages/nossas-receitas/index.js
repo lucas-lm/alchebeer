@@ -2,14 +2,19 @@ import Head from 'next/head'
 import styles from '../../styles/OurRecipes.module.css'
 import Title from '../../components/Title'
 import RecipeCard from '../../components/RecipeCard'
+import { api } from '../../utils'
 
-const data = Array(3).fill({
-  name: 'Bebida',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-  image: 'https://www.bebidasfamosas.com.br/blog/wp-content/uploads/2018/12/drinks-faceis-batida-de-frutas.jpg'
-})
+export const getServerSideProps = async () => {
+  const { data } = await api.get('/drinks/house')
+  console.log(data)
+  return {
+    props: {
+      data
+    }
+  }
+}
 
-export default function OurRecipes() {
+export default function OurRecipes({ data }) {
   return (
     <div className={styles.root}>
       <Head>
@@ -28,7 +33,8 @@ export default function OurRecipes() {
           key={recipe.name}
           title={recipe.name}
           description={recipe.description}
-          image={recipe.image} 
+          image={recipe.image}
+          link={`/nossas-receitas/${recipe.id}`}
         />)}
       </div>
     </div>

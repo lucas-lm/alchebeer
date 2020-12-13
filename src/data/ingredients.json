@@ -5,9 +5,15 @@
     {"id": 3, "name": "Limão", "category": "Frutas", "image": "https://www.selecoes.com.br/wp-content/uploads/2019/07/iStock-1032617064-760x450.jpg"},
     {"id": 4, "name": "Água", "category": "Bebida Base", "image": "https://aguajavilaolimpia.com.br/media/catalog/product/cache/1/image/800x920/9df78eab33525d08d6e5fb8d27136e95/7/5/750-2_3.jpg"},
     {"id": 5, "name": "Brahma Duplo Malte", "category": "Bebida Base", "image": "https://www.portalcdm.com.br/wp-content/uploads/2020/02/Ambev-lanca-Brahma-Duplo-Malte-em-parceria-com-Ze-Neto-e-Cristiano-758x426.jpg"},
-    {"id": 6, "name": "Skol Beats", "category": "Bebida Base", "image": "https://uploads.metropoles.com/wp-content/uploads/2020/10/30172120/1BFE1552-C447-4E37-A07E-3A18149F0FDD-600x400.jpeg"}
+    {"id": 6, "name": "Skol Beats", "category": "Bebida Base", "image": "https://uploads.metropoles.com/wp-content/uploads/2020/10/30172120/1BFE1552-C447-4E37-A07E-3A18149F0FDD-600x400.jpeg"},
+    {"id": 7, "name": "Gelo", "category": "Etc.", "image": "https://blog.egestor.com.br/wp-content/uploads/2017/02/gelos.jpeg"},
+    {"id": 8, "name": "Rum Branco", "category": "Bebida Base", "image": "https://s.alicdn.com/@sc01/kf/HTB1AhJoLVXXXXbNXVXXq6xXFXXXf.jpg_300x300.jpg"},
+    {"id": 9, "name": "Açúcar", "category": "Etc.", "image": "https://s2.static.brasilescola.uol.com.br/img/2019/09/acucar.jpg"},
+    {"id": 10, "name": "Hortelã", "category": "Frutas", "image": "https://www.uniarp.edu.br/farmacia_verde/public/uploads/261f9e54a7468ee23a0980c364a73dea.jpg"},
+    {"id": 11, "name": "Leite condensado", "category": "Etc.", "image": "https://media.gazetadopovo.com.br/bomgourmet/2017/09/leite-condensado-768x509-3ca51cb0.jpg"},
+    {"id": 12, "name": "Vodka", "category": "Bebida Base", "image": "https://image.freepik.com/fotos-gratis/copo-de-vodka-com-gelo-na-mesa-de-madeira_113913-53.jpg"}
   ],
   "categories": [
-    "Bebida Base", "Frutas"
+    "Bebida Base", "Frutas", "Etc."
   ]
 } 

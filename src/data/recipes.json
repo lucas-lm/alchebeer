@@ -1,0 +1,25 @@
+[{
+  "id": 1,
+  "name": "Mix Branco",
+  "description": "Bebida muito refrescante",
+  "image": "https://www.revoluciondecuba.com/wp-content/uploads/2014/11/Blog-Overview-Listing-All-make-perfect-mojito@2x-1.jpg",
+  "ingredients": [10, 9, 8, 7, 6]
+  }, {
+  "id": 2,
+  "name": "Lemon Beats",
+  "description": "Bebida muito saborosa",
+  "image": "https://www.metrofmjuina.com.br/uploads/receitas/20200724181012-YAs0.jpg",
+  "ingredients": [6, 3, 11, 7]
+}, {
+  "id": 3,
+  "name": "Mojito de Beats Spirit",
+  "description": "Ótima opção para fazer em festas",
+  "image": "https://www.receiteria.com.br/wp-content/uploads/receitas-de-mojito-1200x774.jpg",
+  "ingredients": [6, 8, 11, 7, 9]
+}, {
+  "id": 4,
+  "name": "Mix Proibido",
+  "description": "Essa é pra quem gosta de experimentar coisas novas",
+  "image": "https://t2.rg.ltmcdn.com/pt/images/1/2/9/caipirinha_de_morango_com_vodka_2921_600_square.jpg",
+  "ingredients": [12, 6, 11, 1]
+}]
