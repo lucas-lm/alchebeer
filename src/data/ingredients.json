@@ -1,0 +1,13 @@
+{
+  "items": [
+    {"id": 1, "name": "Morango", "category": "Frutas", "image": "https://belezaesaude.com/i/730/1517/beneficios-morango.jpg"},
+    {"id": 2, "name": "Abacaxi", "category": "Frutas", "image": "https://ciclovivo.com.br/wp-content/uploads/2019/06/iStock-942498588.jpg"},
+    {"id": 3, "name": "Limão", "category": "Frutas", "image": "https://www.selecoes.com.br/wp-content/uploads/2019/07/iStock-1032617064-760x450.jpg"},
+    {"id": 4, "name": "Água", "category": "Bebida Base", "image": "https://aguajavilaolimpia.com.br/media/catalog/product/cache/1/image/800x920/9df78eab33525d08d6e5fb8d27136e95/7/5/750-2_3.jpg"},
+    {"id": 5, "name": "Brahma Duplo Malte", "category": "Bebida Base", "image": "https://www.portalcdm.com.br/wp-content/uploads/2020/02/Ambev-lanca-Brahma-Duplo-Malte-em-parceria-com-Ze-Neto-e-Cristiano-758x426.jpg"},
+    {"id": 6, "name": "Skol Beats", "category": "Bebida Base", "image": "https://uploads.metropoles.com/wp-content/uploads/2020/10/30172120/1BFE1552-C447-4E37-A07E-3A18149F0FDD-600x400.jpeg"}
+  ],
+  "categories": [
+    "Bebida Base", "Frutas"
+  ]
+} 
