@@ -18,6 +18,10 @@ const DrinkSchema = Schema({
   creator: {
     type: String,
     required: true
+  },
+  instructions: {
+    type: String,
+    trim: true
   }
 })
 

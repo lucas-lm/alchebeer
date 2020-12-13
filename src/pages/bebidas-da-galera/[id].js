@@ -14,7 +14,8 @@ export const getServerSideProps = async ({ params }) => {
 }
 
 export default function Recipe({ data }) {
-  const { ingredients, name, description, creator } = data
+  const { ingredients, name, description, creator, instructions } = data
+  console.log(data)
   return (
     <div className={styles.root}>
       <Head>
@@ -33,10 +34,8 @@ export default function Recipe({ data }) {
       </ul>
       <Title variant='h4' size='small'>Modo de preparo</Title>
       <p>
-        Não tem segredo, é só misturar tudo em uma coqueteleira e tá feito!
+        {instructions || 'Não tem segredo, é só misturar tudo em uma coqueteleira e tá feito!'}
       </p>
-
-
     </div>
   )
 }
