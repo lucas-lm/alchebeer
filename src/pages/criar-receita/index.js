@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import styles from '../../styles/CreateRecipe.module.css'
 import Title from '../../components/Title'
 import Button from '../../components/Button'
@@ -24,6 +25,7 @@ const CreateRecipe = ({ data }) => {
   const [drinkName, setDrinkName] = useState('')
   const [username, setUsername] = useState('')
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const router = useRouter()
   const modal = `${styles.modal} ${isModalOpen ? '' : styles.closed }`
 
   const handleSelection = id => {
@@ -41,7 +43,9 @@ const CreateRecipe = ({ data }) => {
   const handleSubmit = async event => {
     event.preventDefault()
     const { data } = await api.post('/drinks', {name: drinkName, creator: username, ingredients})
-    console.log(data)
+    if (data._id) {
+      router.push(`/bebidas-da-galera/${data._id}`)
+    }
   }
 
   return (
