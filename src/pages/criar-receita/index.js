@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Head from 'next/head'
 import styles from '../../styles/CreateRecipe.module.css'
+import Title from '../../components/Title'
 import Button from '../../components/Button'
 import Input from '../../components/Input'
 import Backdrop from '../../components/Backdrop'
@@ -57,7 +58,7 @@ const CreateRecipe = ({ data }) => {
         if (itemsFromCategory.length > 0) {
           return (
             <section key={category}>
-              <h2>{category}</h2>
+              <Title variant='h2'>{category}</Title>
               <div className={styles.ingredients}>
                 {itemsFromCategory.map(item => (
                   <IngrediendCard 
@@ -74,7 +75,7 @@ const CreateRecipe = ({ data }) => {
           )
         }
       })}
-      <Button variant='action' onClick={openModal} disabled={ingredients.length === 0}>
+      <Button variant='action' onClick={openModal} disabled={ingredients.length < 2}>
         Criar
       </Button>
       <div className={modal}>

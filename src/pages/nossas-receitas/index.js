@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import styles from '../../styles/OurRecipes.module.css'
+import Title from '../../components/Title'
 import RecipeCard from '../../components/RecipeCard'
 
 const data = Array(3).fill({
-  title: 'Bebida',
-  description: 'Muito boa',
+  name: 'Bebida',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
   image: 'https://www.bebidasfamosas.com.br/blog/wp-content/uploads/2018/12/drinks-faceis-batida-de-frutas.jpg'
 })
 
@@ -19,10 +20,13 @@ export default function OurRecipes() {
         />
       </Head>
 
-      <h2>Lista de Receitas</h2>
+      <Title variant='h2'>
+        Lista de Receitas
+      </Title>
       <div className={styles.recipes}>
         {data.map(recipe => <RecipeCard 
-          title={recipe.title}
+          key={recipe.name}
+          title={recipe.name}
           description={recipe.description}
           image={recipe.image} 
         />)}

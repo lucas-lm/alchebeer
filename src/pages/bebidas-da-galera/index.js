@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../../styles/Recipes.module.css'
+import Title from '../../components/Title'
 import RecipeCard from '../../components/RecipeCard'
 import { api } from '../../utils'
 
@@ -30,7 +31,7 @@ export default function OurRecipes({ data }) {
         />
       </Head>
 
-      <h2>Bebidas da Galera</h2>
+      <Title variant='h2'>Bebidas da Galera</Title>
       <div className={styles.recipes}>
         {data.map(recipe => <RecipeCard 
           key={recipe.name}
