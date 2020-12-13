@@ -1,0 +1,8 @@
+.root {
+  display: block;
+  border: 1px solid #bbbec2;
+  padding: 8px;
+  outline: none;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
