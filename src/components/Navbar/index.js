@@ -9,7 +9,7 @@ const Navbar = () => {
       <ul className={styles.menu}>
         <Navlink to='/'>Home</Navlink>
         <Navlink to='/criar-receita'>Criar Receita</Navlink>
-        <Navlink to='/receitas-da-galera'>Receitas da Galera</Navlink>
+        <Navlink to='/bebidas-da-galera'>Bebidas da Galera</Navlink>
         <Navlink to='/nossas-receitas'>Nossas Receitas</Navlink>
       </ul>
     </header>
