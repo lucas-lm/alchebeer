@@ -1,0 +1,13 @@
+.root {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.ingredients {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ingredients>* {
+  margin: 8px;
+}
