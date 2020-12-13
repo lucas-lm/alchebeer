@@ -1,0 +1,10 @@
+.root {
+  font-weight: 500;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  margin: 16px 0;
+  color: #212529;
+}
+
+.regular {
+  font-size: 2em;
+}
