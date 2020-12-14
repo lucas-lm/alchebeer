@@ -1,8 +1,7 @@
-![banner](/public/ambev.png)
+![banner](/public/banner2.jpg)
 
 # Alchebeer
 
-<!-- ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000) -->
 ![Prerequisite](https://img.shields.io/badge/node-~12.14.1-blue.svg)
 ![Prerequisite](https://img.shields.io/badge/npm-~6.13.4-blue.svg)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/lucas-lm/alchebeer#readme)
@@ -38,6 +37,7 @@
 
 - [React.js](https://reactjs.org/)
 - [Next.js](https://nextjs.org/)
+- [MongoDB](https://www.mongodb.com/)
 
 ## Prerequisites
 
@@ -55,7 +55,7 @@ npm install
 yarn
 ```
 
-Create a .env.local file in the root of the project or simply rename .env.local.example to .env.local and put your MongoDB URL in place of `<your MongoDB URI>`. Save this file and run the development server:
+Rename .env.local.example file (in the root) to .env.local and put your MongoDB URL in place of `<your MongoDB URI>`. Save this file and run the development server:
 
 ```bash
 npm run dev
