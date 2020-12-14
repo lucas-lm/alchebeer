@@ -1,0 +1,7 @@
+.divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to right,#00000000, #000000ff, #00000000);
+  margin-top: 12px;
+  margin-bottom: 12px;
+}

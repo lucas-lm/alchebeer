@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import styles from '../../styles/Recipe.module.css'
 import Title from '../../components/Title'
+import Divider from '../../components/Divider'
+import FakeComments from '../../components/FakeComments'
 import { api } from '../../utils'
 
 export const getServerSideProps = async ({ params }) => {
@@ -25,17 +27,22 @@ export default function Recipe({ data }) {
           content={`Veja a receita de ${creator}: ${name}`}
         />
       </Head>
-      <Title variant='h2' style={{marginBottom: 0}}>{name}</Title>
-      <small>Criado por {creator}</small>
-      {description && <p>{description}</p>}
-      <Title variant='h4' size='small'>Ingredientes</Title>
-      <ul style={{listStyle: 'none'}}>
-        {ingredients.map(i => <li key={i.name}>{i.name}</li>)}
-      </ul>
-      <Title variant='h4' size='small'>Modo de preparo</Title>
-      <p>
-        {instructions || 'Não tem segredo, é só misturar tudo em uma coqueteleira e tá feito!'}
-      </p>
+      <section>
+        <Title variant='h2' style={{marginBottom: 0}}>{name}</Title>
+        <small style={{display: 'block'}}>Criado por {creator}</small>
+        {description && <p>{description}</p>}
+        <img src='https://lh3.googleusercontent.com/proxy/8vqBHhVC-WdkBXlKQ43vEebIaPPu7Ql2xrGXnhrYX7bk3FlsO1zdBCShnSBj9z-P__8ZCl4FY1zNmbvgovKcjXovDosVt9CCnIN2m2QGdr8bbEkJoGvlCTGF97UZuBnPkwM' className={styles['drink-picture']} />
+        <Title variant='h4' size='small'>Ingredientes</Title>
+        <ul style={{listStyle: 'none'}}>
+          {ingredients.map(i => <li key={i.name}>{i.name}</li>)}
+        </ul>
+        <Title variant='h4' size='small'>Modo de preparo</Title>
+        <p>
+          {instructions || 'Não tem segredo, é só misturar tudo em uma coqueteleira e tá feito!'}
+        </p>
+      </section>
+      <Divider />
+      <FakeComments />
     </div>
   )
 }

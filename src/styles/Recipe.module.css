@@ -2,3 +2,16 @@
   width: 95%;
   margin: 0 auto;
 }
+
+.recipe {
+  display: flex;
+  align-items: center;
+}
+
+.drink-picture {
+  max-width: 300px;
+  max-height: 240px;
+  border-radius: 4px;
+  margin: 8px 0;
+  object-fit: cover;
+}

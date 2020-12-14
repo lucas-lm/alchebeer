@@ -1,0 +1,14 @@
+.comment {
+  display: flex;
+  margin-bottom: 16px;
+
+}
+
+.comment-box {
+  margin-left: 16px;
+}
+
+.name {
+  font-size: 1.3em;
+  font-weight: 600;
+}
