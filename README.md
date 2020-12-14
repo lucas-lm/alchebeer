@@ -43,7 +43,7 @@
 
 - node ~12.14.1
 - npm ~6.13.4
-
+- MongoDB
 
 ## Getting Started
 
@@ -55,7 +55,7 @@ npm install
 yarn
 ```
 
-Then, run the development server:
+Create a .env.local file in the root of the project or simply rename .env.local.example to .env.local and put your MongoDB URL in place of `<your MongoDB URI>`. Save this file and run the development server:
 
 ```bash
 npm run dev
