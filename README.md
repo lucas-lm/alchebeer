@@ -27,9 +27,7 @@ Thinking about that question we have created Alchebeer. Our goal is to encourage
   - [Getting Started](#getting-started)
   - [Deploy on Vercel](#deploy-on-vercel)
   - [Next steps](#next-steps)
-  - [Author](#author)
   - [🤝 Contributing](#-contributing)
-  - [Show your support](#show-your-support)
   - [📝 License](#-license)
 
 ## Features
@@ -78,34 +76,19 @@ Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment)
 
 ## Next steps
 
-- [] Add responsive layout
-- [] Change codebase to TypeScript
-- [] Improve code patterns and quality
-- [] Add automated tests
-- [] Improve data structure
-- [] Add analytics tool
-- [] Add more recipes and informations
-
-## Author
-
-👤 **Lucas Miranda**
-
-- Website: https://lucas-lm.github.io
-- Twitter: [@\_\_lucas_lm](https://twitter.com/__lucas_lm)
-- Github: [@lucas-lm](https://github.com/lucas-lm)
-- LinkedIn: [@lucas-lm](https://linkedin.com/in/lucas-lm)
+- [ ] Add responsive layout
+- [ ] Change codebase to TypeScript
+- [ ] Improve code patterns and quality
+- [ ] Add automated tests
+- [ ] Improve data structure
+- [ ] Add analytics tool
+- [ ] Add more recipes and informations
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
 Feel free to check [issues page](https://github.com/lucas-lm/alchebeer/issues). You can also take a look at the [contributing guide](https://github.com/lucas-lm/alchebeer/blob/master/CONTRIBUTING.md).
-
-## Show your support
-
-Give a ⭐️ if this project helped you!
-
-[Buy me a coffee](https://www.buymeacoffee.com/nVG4BNJ)
 
 ## 📝 License
 
