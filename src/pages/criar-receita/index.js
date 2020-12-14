@@ -24,6 +24,7 @@ const CreateRecipe = ({ data }) => {
   const [ingredients, setIngredients] = useState([])
   const [drinkName, setDrinkName] = useState('')
   const [username, setUsername] = useState('')
+  const [instructions, setInstructions] = useState('')
   const [isModalOpen, setIsModalOpen] = useState(false)
   const router = useRouter()
   const modal = `${styles.modal} ${isModalOpen ? '' : styles.closed }`
@@ -42,7 +43,7 @@ const CreateRecipe = ({ data }) => {
 
   const handleSubmit = async event => {
     event.preventDefault()
-    const { data } = await api.post('/drinks', {name: drinkName, creator: username, ingredients})
+    const { data } = await api.post('/drinks', {name: drinkName, creator: username, ingredients, instructions})
     if (data._id) {
       router.push(`/bebidas-da-galera/${data._id}`)
     }
@@ -88,6 +89,7 @@ const CreateRecipe = ({ data }) => {
         <form onSubmit={handleSubmit} className={styles['drink-form']}>
           <Input value={username} onChange={e => setUsername(e.target.value)} placeholder='Seu nome' required />
           <Input value={drinkName} onChange={e => setDrinkName(e.target.value)} placeholder='Nome do drink' required />
+          <Input value={instructions} onChange={e => setInstructions(e.target.value)} placeholder='Modo de preparo (opcional caso seja só misturar...)' />
           <Button variant='action' type='submit'>
             Enviar
           </Button>
