@@ -10,17 +10,16 @@
 
 > House of the best drinks recipes
 
+🏠 [Homepage](https://alchebeer.vercel.app)
 
 How to create custom beers for each type of consumer? 
 
 Thinking about that question we have created Alchebeer. Our goal is to encourage consumers to create new drinks with AMBEV's beverage and share their recipes. We have a website and a mobile app, where users can create drink recipes with AMBEV's beverage and these recipes will be available to everyone. In addition to bringing brand engagement and increasing sales, we will also be able to be a great source of data for AMBEV in the future and together we're going to have a greater understanding of customers.
 
-### 🏠 [Homepage](https://alchebeer.vercel.app)
 
 # Table of Contents
 
 - [Alchebeer](#alchebeer)
-    - [🏠 Homepage](#-homepage)
 - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [Techs](#techs)
