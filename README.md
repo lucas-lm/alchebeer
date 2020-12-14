@@ -1,8 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![banner](/public/ambev.png)
+
+# Alchebeer
+
+<!-- ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000) -->
+![Prerequisite](https://img.shields.io/badge/node-~12.14.1-blue.svg)
+![Prerequisite](https://img.shields.io/badge/npm-~6.13.4-blue.svg)
+[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/lucas-lm/alchebeer#readme)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/lucas-lm/alchebeer/graphs/commit-activity)
+[![License: MIT](https://img.shields.io/github/license/lucas-lm/alchebeer)](https://github.com/lucas-lm/alchebeer/blob/master/LICENSE)
+
+> House of the best drinks recipes
+
+### 🏠 [Homepage](https://alchebeer.vercel.app)
+
+# Table of Contents
+
+- [Alchebeer](#alchebeer)
+    - [🏠 Homepage](#-homepage)
+- [Table of Contents](#table-of-contents)
+  - [Features](#features)
+  - [Techs](#techs)
+  - [Prerequisites](#prerequisites)
+  - [Getting Started](#getting-started)
+  - [Deploy on Vercel](#deploy-on-vercel)
+  - [Author](#author)
+  - [🤝 Contributing](#-contributing)
+  - [Show your support](#show-your-support)
+  - [📝 License](#-license)
+
+## Features
+
+- List of recipes curated by Alchebeer
+- List of users' recipes
+- Create recipes
+
+## Techs
+
+- [React.js](https://reactjs.org/)
+- [Next.js](https://nextjs.org/)
+
+## Prerequisites
+
+- node ~12.14.1
+- npm ~6.13.4
+
 
 ## Getting Started
 
-First, run the development server:
+First install the dependencies:
+
+```bash
+npm install
+# or
+yarn
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -12,19 +65,35 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy a Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Author
+
+👤 **Lucas Miranda**
+
+- Website: https://lucas-lm.github.io
+- Twitter: [@\_\_lucas_lm](https://twitter.com/__lucas_lm)
+- Github: [@lucas-lm](https://github.com/lucas-lm)
+- LinkedIn: [@lucas-lm](https://linkedin.com/in/lucas-lm)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check [issues page](https://github.com/lucas-lm/alchebeer/issues). You can also take a look at the [contributing guide](https://github.com/lucas-lm/alchebeer/blob/master/CONTRIBUTING.md).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+[Buy me a coffee](https://www.buymeacoffee.com/nVG4BNJ)
+
+## 📝 License
+
+Copyright © 2020 [Lucas Miranda](https://github.com/lucas-lm).
+
+This project is [MIT](https://github.com/lucas-lm/alchebeer/blob/master/LICENSE) licensed.
