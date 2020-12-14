@@ -6,7 +6,6 @@ import { api } from '../../utils'
 
 export const getServerSideProps = async () => {
   const { data } = await api.get('/drinks/house')
-  console.log(data)
   return {
     props: {
       data
