@@ -13,7 +13,7 @@ export const getServerSideProps = async ({ params }) => {
 }
 
 export default function Recipe({ data }) {
-  const { ingredients, name, description, instructions='' } = data
+  const { ingredients, name, image, description, instructions='' } = data
   console.log(data)
   return (
     <div className={styles.root}>
@@ -24,16 +24,21 @@ export default function Recipe({ data }) {
           content={`Veja a receita ${name} no alchebeer`}
         />
       </Head>
-      <Title variant='h2' style={{marginBottom: 0}}>{name}</Title>
-      {description && <p>{description}</p>}
-      <Title variant='h4' size='small'>Ingredientes</Title>
-      <ul style={{listStyle: 'none'}}>
-        {ingredients.map(i => <li key={i.name}>{i.name}</li>)}
-      </ul>
-      <Title variant='h4' size='small'>Modo de preparo</Title>
-      <p>
-        {instructions || 'Não tem segredo, é só misturar tudo em uma coqueteleira e tá feito!'}
-      </p>
+      <section className={styles.recipe}>
+        <div>
+          <Title variant='h2' style={{marginBottom: 0}}>{name}</Title>
+          {description && <p>{description}</p>}
+          <img src={image} className={styles['drink-picture']}/>
+          <Title variant='h4' size='small'>Ingredientes</Title>
+          <ul style={{listStyle: 'none'}}>
+            {ingredients.map(i => <li key={i.name}>{i.name}</li>)}
+          </ul>
+          <Title variant='h4' size='small'>Modo de preparo</Title>
+          <p>
+            {instructions || 'Não tem segredo, é só misturar tudo em uma coqueteleira e tá feito!'}
+          </p>
+        </div>
+      </section>
     </div>
   )
 }
