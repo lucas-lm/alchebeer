@@ -26,6 +26,7 @@ Thinking about that question we have created Alchebeer. Our goal is to encourage
   - [Prerequisites](#prerequisites)
   - [Getting Started](#getting-started)
   - [Deploy on Vercel](#deploy-on-vercel)
+  - [Next steps](#next-steps)
   - [Author](#author)
   - [🤝 Contributing](#-contributing)
   - [Show your support](#show-your-support)
@@ -74,6 +75,16 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 The easiest way to deploy a Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Next steps
+
+- [] Add responsive layout
+- [] Change codebase to TypeScript
+- [] Improve code patterns and quality
+- [] Add automated tests
+- [] Improve data structure
+- [] Add analytics tool
+- [] Add more recipes and informations
 
 ## Author
 
