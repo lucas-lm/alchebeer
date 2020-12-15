@@ -14,7 +14,6 @@ export const getServerSideProps = async ({ params }) => {
 
 export default function Recipe({ data }) {
   const { ingredients, name, image, description, instructions='' } = data
-  console.log(data)
   return (
     <div className={styles.root}>
       <Head>
