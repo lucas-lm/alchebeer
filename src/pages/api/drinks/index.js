@@ -13,9 +13,12 @@ export default async (req, res) => {
       
     case 'POST': {
       const { body: { name, creator, ingredients, instructions='' } } = req
-      const drink = await Drink.create({name, creator, ingredients, instructions})
-      console.log(drink)
-      return res.json(drink)
+      try {
+        const drink = await Drink.create({name, creator, ingredients, instructions})
+        return res.json(drink)
+      } catch (error) {
+        return res.json({error: true})
+      }
     }
   
     default:

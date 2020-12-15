@@ -21,6 +21,7 @@ export const getServerSideProps = async () => {
 
 const CreateRecipe = ({ data }) => {
   const { items, categories } = data
+  const [error, setError] = useState(false)
   const [ingredients, setIngredients] = useState([])
   const [drinkName, setDrinkName] = useState('')
   const [username, setUsername] = useState('')
@@ -43,10 +44,22 @@ const CreateRecipe = ({ data }) => {
 
   const handleSubmit = async event => {
     event.preventDefault()
-    const { data } = await api.post('/drinks', {name: drinkName, creator: username, ingredients, instructions})
-    if (data._id) {
-      router.push(`/bebidas-da-galera/${data._id}`)
+    try {
+      const { data } = await api.post('/drinks', {name: drinkName, creator: username, ingredients, instructions})
+      if (data.error) {
+        setError(true)
+      }
+      if (data._id) {
+        router.push(`/bebidas-da-galera/${data._id}`)
+      }
+    } catch (error) {
+      setError(true)
     }
+  }
+
+  const handleChangeDrinkName = e => {
+    setDrinkName(e.target.value)
+    setError(false)
   }
 
   return (
@@ -89,9 +102,10 @@ const CreateRecipe = ({ data }) => {
         <h2>Quase lá!</h2>
         <p>Só precisamos de mais algumas informações antes de registrar sua receita</p>
         <form onSubmit={handleSubmit} className={styles['drink-form']}>
-          <Input value={username} onChange={e => setUsername(e.target.value)} placeholder='Seu nome' required />
-          <Input value={drinkName} onChange={e => setDrinkName(e.target.value)} placeholder='Nome do drink' required />
+          <Input value={drinkName} onChange={handleChangeDrinkName} placeholder='Nome do drink *' required />
           <Input value={instructions} onChange={e => setInstructions(e.target.value)} placeholder='Modo de preparo (opcional caso seja só misturar...)' />
+          <Input value={username} onChange={e => setUsername(e.target.value)} placeholder='Seu nome *' required />
+          {error && <p style={{color: 'red'}}>Dê outro nome para seu drink. Esse já existe :(</p>}
           <Button variant='action' type='submit'>
             Enviar
           </Button>
