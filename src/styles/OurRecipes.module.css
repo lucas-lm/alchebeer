@@ -5,8 +5,10 @@
 
 .recipes {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .recipes>* {
-  margin: 8px;
+  margin: 16px;
+  margin-left: 0;
 }

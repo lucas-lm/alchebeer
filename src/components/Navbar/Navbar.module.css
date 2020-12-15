@@ -18,3 +18,50 @@
 .menu>* {
   margin: 0 16px
 }
+
+.hamburger {
+  all: unset;
+  cursor: pointer;
+  display: none;
+}
+
+.filler {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color:  #451311;
+    font-size: 20px;
+    font-weight: 600;
+    border-left: #ba0c2f solid 10px;
+  }
+
+  .menu>* {
+    margin: 12px;
+  }
+
+  .menu-closed {
+    display: none;
+  }
+
+  .menu-open {
+    display: flex;
+  }
+
+  .filler {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}

@@ -58,12 +58,14 @@ const CreateRecipe = ({ data }) => {
           content="Crie e compartilhe receitas de drinks com a galera!"
         />
       </Head>
+      <Title variant='h1'>Monte seu drink</Title>
+      <p>Escolha os ingredientes para montar seu drink na lista a seguir. Sua receita vai ficar disponível pra todo mundo depois!</p>
       {categories.map(category => {
         const itemsFromCategory = items.filter(item => item.category === category)
         if (itemsFromCategory.length > 0) {
           return (
             <section key={category}>
-              <Title variant='h2'>{category}</Title>
+              <Title variant='h2' size='small'>{category}</Title>
               <div className={styles.ingredients}>
                 {itemsFromCategory.map(item => (
                   <IngrediendCard 

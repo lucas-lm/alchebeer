@@ -1,8 +1,8 @@
 import Link from 'next/link'
 
-const Navlink = ({ children, to }) => {
+const Navlink = ({ children, to, ...rest }) => {
   return (
-    <li>
+    <li {...rest}>
       <Link href={to}>
         <a>{children}</a>
       </Link>
