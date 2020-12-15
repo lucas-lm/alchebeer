@@ -3,17 +3,24 @@
     {"id": 1, "name": "Morango", "category": "Frutas", "image": "https://belezaesaude.com/i/730/1517/beneficios-morango.jpg"},
     {"id": 2, "name": "Abacaxi", "category": "Frutas", "image": "https://ciclovivo.com.br/wp-content/uploads/2019/06/iStock-942498588.jpg"},
     {"id": 3, "name": "Limão", "category": "Frutas", "image": "https://www.selecoes.com.br/wp-content/uploads/2019/07/iStock-1032617064-760x450.jpg"},
-    {"id": 4, "name": "Água", "category": "Bebida Base", "image": "https://aguajavilaolimpia.com.br/media/catalog/product/cache/1/image/800x920/9df78eab33525d08d6e5fb8d27136e95/7/5/750-2_3.jpg"},
-    {"id": 5, "name": "Brahma Duplo Malte", "category": "Bebida Base", "image": "https://www.portalcdm.com.br/wp-content/uploads/2020/02/Ambev-lanca-Brahma-Duplo-Malte-em-parceria-com-Ze-Neto-e-Cristiano-758x426.jpg"},
-    {"id": 6, "name": "Skol Beats", "category": "Bebida Base", "image": "https://uploads.metropoles.com/wp-content/uploads/2020/10/30172120/1BFE1552-C447-4E37-A07E-3A18149F0FDD-600x400.jpeg"},
+    {"id": 4, "name": "Água", "category": "Bebidas", "image": "https://aguajavilaolimpia.com.br/media/catalog/product/cache/1/image/800x920/9df78eab33525d08d6e5fb8d27136e95/7/5/750-2_3.jpg"},
+    {"id": 5, "name": "Brahma Duplo Malte", "category": "Bebidas", "image": "https://www.portalcdm.com.br/wp-content/uploads/2020/02/Ambev-lanca-Brahma-Duplo-Malte-em-parceria-com-Ze-Neto-e-Cristiano-758x426.jpg"},
+    {"id": 6, "name": "Skol Beats", "category": "Bebidas", "image": "https://uploads.metropoles.com/wp-content/uploads/2020/10/30172120/1BFE1552-C447-4E37-A07E-3A18149F0FDD-600x400.jpeg"},
     {"id": 7, "name": "Gelo", "category": "Etc.", "image": "https://blog.egestor.com.br/wp-content/uploads/2017/02/gelos.jpeg"},
-    {"id": 8, "name": "Rum Branco", "category": "Bebida Base", "image": "https://s.alicdn.com/@sc01/kf/HTB1AhJoLVXXXXbNXVXXq6xXFXXXf.jpg_300x300.jpg"},
-    {"id": 9, "name": "Açúcar", "category": "Etc.", "image": "https://s2.static.brasilescola.uol.com.br/img/2019/09/acucar.jpg"},
-    {"id": 10, "name": "Hortelã", "category": "Frutas", "image": "https://www.uniarp.edu.br/farmacia_verde/public/uploads/261f9e54a7468ee23a0980c364a73dea.jpg"},
-    {"id": 11, "name": "Leite condensado", "category": "Etc.", "image": "https://media.gazetadopovo.com.br/bomgourmet/2017/09/leite-condensado-768x509-3ca51cb0.jpg"},
-    {"id": 12, "name": "Vodka", "category": "Bebida Base", "image": "https://image.freepik.com/fotos-gratis/copo-de-vodka-com-gelo-na-mesa-de-madeira_113913-53.jpg"}
+    {"id": 8, "name": "Rum Branco", "category": "Bebidas", "image": "https://s.alicdn.com/@sc01/kf/HTB1AhJoLVXXXXbNXVXXq6xXFXXXf.jpg_300x300.jpg"},
+    {"id": 9, "name": "Açúcar", "category": "Adoçantes", "image": "https://s2.static.brasilescola.uol.com.br/img/2019/09/acucar.jpg"},
+    {"id": 10, "name": "Hortelã", "category": "Etc.", "image": "https://www.uniarp.edu.br/farmacia_verde/public/uploads/261f9e54a7468ee23a0980c364a73dea.jpg"},
+    {"id": 11, "name": "Leite condensado", "category": "Adoçantes", "image": "https://media.gazetadopovo.com.br/bomgourmet/2017/09/leite-condensado-768x509-3ca51cb0.jpg"},
+    {"id": 12, "name": "Vodka", "category": "Bebidas", "image": "https://image.freepik.com/fotos-gratis/copo-de-vodka-com-gelo-na-mesa-de-madeira_113913-53.jpg"},
+    {"id": 13, "name": "Mel", "category": "Adoçantes", "image": "https://cms.rockymountain.com.br/womenshealth/wp-content/uploads/sites/6/2018/06/mel-melhor-acucar.jpg"},
+    {"id": 14, "name": "Corona Extra", "category": "Bebidas", "image": "https://mediastorage.cnnbrasil.com.br/IMAGES/00/00/00/522_CC785A6D389C59F9.jpg"},
+    {"id": 15, "name": "Budweiser", "category": "Bebidas", "image": "https://images.successstory.com/img_company/bud_1457429288.jpg"},
+    {"id": 16, "name": "Kiwi", "category": "Frutas", "image": "https://www.healthifyme.com/blog/wp-content/uploads/2020/01/Kiwi-fruit-1.jpg"},
+    {"id": 17, "name": "Stela Artois", "category": "Bebidas", "image": "https://malucellidotlive.files.wordpress.com/2019/06/stella-artois.jpg"},
+    {"id": 18, "name": "Laranja Vermelha", "category": "Frutas", "image": "https://www.bancodasaude.com/cdn/press/0000000005173.jpg"},
+    {"id": 19, "name": "Limão Siciliano", "category": "Frutas", "image": "https://d26lpennugtm8s.cloudfront.net/stores/746/397/products/limao-siciliano-114341-5ac768ef885011830215221664122581-1024-1024.jpg"}
   ],
   "categories": [
-    "Bebida Base", "Frutas", "Etc."
+    "Bebidas", "Frutas", "Adoçantes", "Etc."
   ]
 } 

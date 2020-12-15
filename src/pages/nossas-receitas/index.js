@@ -24,9 +24,10 @@ export default function OurRecipes({ data }) {
         />
       </Head>
 
-      <Title variant='h2'>
-        Lista de Receitas
+      <Title variant='h1'>
+        Nossas Receitas
       </Title>
+      <p>Se liga só nessas receitas que a nossa equipe preparou pra galera 🍻🍸🥂🍹</p>
       <div className={styles.recipes}>
         {data.map(recipe => <RecipeCard 
           key={recipe.name}
