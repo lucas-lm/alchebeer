@@ -17,7 +17,6 @@ export const getServerSideProps = async ({ params }) => {
 
 export default function Recipe({ data }) {
   const { ingredients, name, description, creator, instructions } = data
-  console.log(data)
   return (
     <div className={styles.root}>
       <Head>
@@ -31,7 +30,7 @@ export default function Recipe({ data }) {
         <Title variant='h2' style={{marginBottom: 0}}>{name}</Title>
         <small style={{display: 'block'}}>Criado por {creator}</small>
         {description && <p>{description}</p>}
-        <img src='https://lh3.googleusercontent.com/proxy/8vqBHhVC-WdkBXlKQ43vEebIaPPu7Ql2xrGXnhrYX7bk3FlsO1zdBCShnSBj9z-P__8ZCl4FY1zNmbvgovKcjXovDosVt9CCnIN2m2QGdr8bbEkJoGvlCTGF97UZuBnPkwM' className={styles['drink-picture']} />
+        <img src='/assets/generic.jpg' className={styles['drink-picture']} />
         <Title variant='h4' size='small'>Ingredientes</Title>
         <ul style={{listStyle: 'none'}}>
           {ingredients.map(i => <li key={i.name}>{i.name}</li>)}

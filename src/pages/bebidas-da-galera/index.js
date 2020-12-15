@@ -16,8 +16,8 @@ export const getServerSideProps = async () => {
 
 const getImage = ings => {
   const sum = ings.reduce((curr, prev) => curr + prev)
-  const n = sum % 4 + 1
-  return `/assets/drink${n}.png`
+  const n = sum % 12 + 1
+  return `/assets/drink${n}.jpg`
 }
 
 export default function OurRecipes({ data }) {
